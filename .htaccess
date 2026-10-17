@@ -1,0 +1,7 @@
+# Tolak akses HTTP ke berkas/folder non-publik (Apache 2.4)
+<If "%{REQUEST_URI} =~ m#/(\.git|config|models|database|partials)(/|$)#">
+    Require all denied
+</If>
+<FilesMatch "(\.md|\.sql|\.json|^\.gitignore|^\.gitattributes)$">
+    Require all denied
+</FilesMatch>

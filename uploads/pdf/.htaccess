@@ -1,0 +1,2 @@
+# PDF hanya lewat dokumen.php?id=...&unduh=1 (cek login), tidak boleh diakses langsung
+Require all denied

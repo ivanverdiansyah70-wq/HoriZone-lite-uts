@@ -1,0 +1,5 @@
+Options -Indexes
+# Tidak ada skrip yang boleh dijalankan dari folder unggahan
+<FilesMatch "\.(php|phtml|phar|php[0-9])$">
+    Require all denied
+</FilesMatch>
